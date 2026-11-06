@@ -1,0 +1,127 @@
+{
+  "emt": {
+    "seed": 2022,
+    "batch_size": 64,
+    "max_epochs": 10,
+    "patience": 10,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "label_smoothing": 0.1,
+    "scheduler": "none",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "pgcn": {
+    "seed": 222,
+    "batch_size": 32,
+    "max_epochs": 300,
+    "patience": 20,
+    "optimizer": "AdamW_parameter_groups",
+    "learning_rate": 0.01,
+    "laplacian_learning_rate": 5e-05,
+    "weight_decay": 0.0005,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "label_smoothing": 0.05,
+    "scheduler": "MultiStepLR(epoch=100,gamma=0.1)+UntunedLinearWarmup",
+    "warmup_period": 1999,
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "hdgnet": {
+    "seed": 42,
+    "batch_size": 200,
+    "max_epochs": 200,
+    "patience": 200,
+    "optimizer": "Adam",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.0,
+    "scheduler": "none",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch",
+    "early_stop": "author rule: stop after >10 repeated validation accuracies once train accuracy exceeds 99.99%, or validation exceeds 99.99%"
+  },
+  "bf_gcn_de": {
+    "seed": 42,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 20,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "label_smoothing": 0.0,
+    "scheduler": "none",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "dgcnn": {
+    "seed": 40000,
+    "batch_size": 32,
+    "max_epochs": 100,
+    "patience": 20,
+    "optimizer": "Adam",
+    "learning_rate": 0.00055,
+    "weight_decay": 4e-05,
+    "label_smoothing": 0.0,
+    "scheduler": "CosineAnnealingLR(T_max=100)",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "rgcb": {
+    "seed": 40000,
+    "batch_size": 32,
+    "max_epochs": 100,
+    "patience": 20,
+    "optimizer": "Adam",
+    "learning_rate": 0.00055,
+    "weight_decay": 4e-05,
+    "label_smoothing": 0.0,
+    "scheduler": "CosineAnnealingLR(T_max=100)",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "dgclink": {
+    "seed": 40000,
+    "batch_size": 32,
+    "max_epochs": 200,
+    "patience": 20,
+    "optimizer": "Adam",
+    "learning_rate": 0.00055,
+    "weight_decay": 4e-05,
+    "label_smoothing": 0.0,
+    "scheduler": "CosineAnnealingLR(T_max=200)",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  },
+  "masatcn": {
+    "seed": 0,
+    "batch_size": 2,
+    "max_epochs": 15,
+    "early_stopping_patience": 10,
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "minimum_learning_rate": 1e-06,
+    "weight_decay": 0.001,
+    "scheduler": "ReduceLROnPlateau(mode=min)",
+    "scheduler_patience": 5,
+    "scheduler_factor": 0.5,
+    "hidden_channels": [
+      64,
+      64
+    ],
+    "anchor_kernels": [
+      3,
+      5,
+      15
+    ],
+    "dropout": 0.15,
+    "early_fusion": true,
+    "loss": "cross_entropy",
+    "selection_metric": "development_accuracy",
+    "tie_break": "earliest_epoch"
+  }
+}

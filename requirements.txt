@@ -1,3 +1,6 @@
 numpy
-torch
+scipy
 scikit-learn
+torch
+torch-geometric
+einops
