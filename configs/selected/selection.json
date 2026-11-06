@@ -1,0 +1,191 @@
+{
+  "selection_seed": 2025,
+  "training_seeds": [
+    2025,
+    2031,
+    2032
+  ],
+  "fold_seed": 20261010,
+  "folds": [
+    {
+      "task": "pmemo_cls",
+      "fold": 0,
+      "selection": "baseline",
+      "config": "configs/selected/pmemo_cls_fold0.json"
+    },
+    {
+      "task": "pmemo_cls",
+      "fold": 1,
+      "selection": "lr3e4_wd5e2",
+      "config": "configs/selected/pmemo_cls_fold1.json"
+    },
+    {
+      "task": "pmemo_cls",
+      "fold": 2,
+      "selection": "lr1e4_wd1e3",
+      "config": "configs/selected/pmemo_cls_fold2.json"
+    },
+    {
+      "task": "pmemo_cls",
+      "fold": 3,
+      "selection": "lr1e3_wd1e3",
+      "config": "configs/selected/pmemo_cls_fold3.json"
+    },
+    {
+      "task": "pmemo_cls",
+      "fold": 4,
+      "selection": "lr3e4_wd1e3",
+      "config": "configs/selected/pmemo_cls_fold4.json"
+    },
+    {
+      "task": "pmemo_reg",
+      "fold": 0,
+      "selection": "original",
+      "config": "configs/selected/pmemo_reg_fold0.json"
+    },
+    {
+      "task": "pmemo_reg",
+      "fold": 1,
+      "selection": "original",
+      "config": "configs/selected/pmemo_reg_fold1.json"
+    },
+    {
+      "task": "pmemo_reg",
+      "fold": 2,
+      "selection": "original",
+      "config": "configs/selected/pmemo_reg_fold2.json"
+    },
+    {
+      "task": "pmemo_reg",
+      "fold": 3,
+      "selection": "original",
+      "config": "configs/selected/pmemo_reg_fold3.json"
+    },
+    {
+      "task": "pmemo_reg",
+      "fold": 4,
+      "selection": "original",
+      "config": "configs/selected/pmemo_reg_fold4.json"
+    },
+    {
+      "task": "k1000_cls",
+      "fold": 0,
+      "selection": "original",
+      "config": "configs/selected/k1000_cls_fold0.json"
+    },
+    {
+      "task": "k1000_cls",
+      "fold": 1,
+      "selection": "original",
+      "config": "configs/selected/k1000_cls_fold1.json"
+    },
+    {
+      "task": "k1000_cls",
+      "fold": 2,
+      "selection": "original",
+      "config": "configs/selected/k1000_cls_fold2.json"
+    },
+    {
+      "task": "k1000_cls",
+      "fold": 3,
+      "selection": "original",
+      "config": "configs/selected/k1000_cls_fold3.json"
+    },
+    {
+      "task": "k1000_cls",
+      "fold": 4,
+      "selection": "original",
+      "config": "configs/selected/k1000_cls_fold4.json"
+    },
+    {
+      "task": "k1000_reg",
+      "fold": 0,
+      "selection": "original",
+      "config": "configs/selected/k1000_reg_fold0.json"
+    },
+    {
+      "task": "k1000_reg",
+      "fold": 1,
+      "selection": "original",
+      "config": "configs/selected/k1000_reg_fold1.json"
+    },
+    {
+      "task": "k1000_reg",
+      "fold": 2,
+      "selection": "original",
+      "config": "configs/selected/k1000_reg_fold2.json"
+    },
+    {
+      "task": "k1000_reg",
+      "fold": 3,
+      "selection": "original",
+      "config": "configs/selected/k1000_reg_fold3.json"
+    },
+    {
+      "task": "k1000_reg",
+      "fold": 4,
+      "selection": "original",
+      "config": "configs/selected/k1000_reg_fold4.json"
+    },
+    {
+      "task": "memo_cls",
+      "fold": 0,
+      "selection": "lr3e4_wd1e3",
+      "config": "configs/selected/memo_cls_fold0.json"
+    },
+    {
+      "task": "memo_cls",
+      "fold": 1,
+      "selection": "lr1e3_wd5e2",
+      "config": "configs/selected/memo_cls_fold1.json"
+    },
+    {
+      "task": "memo_cls",
+      "fold": 2,
+      "selection": "baseline",
+      "config": "configs/selected/memo_cls_fold2.json"
+    },
+    {
+      "task": "memo_cls",
+      "fold": 3,
+      "selection": "lr1e3_wd5e2",
+      "config": "configs/selected/memo_cls_fold3.json"
+    },
+    {
+      "task": "memo_cls",
+      "fold": 4,
+      "selection": "baseline",
+      "config": "configs/selected/memo_cls_fold4.json"
+    },
+    {
+      "task": "memo_reg",
+      "fold": 0,
+      "selection": "lr1e3_wd1e3",
+      "config": "configs/selected/memo_reg_fold0.json"
+    },
+    {
+      "task": "memo_reg",
+      "fold": 1,
+      "selection": "lr3e4_wd1e3",
+      "config": "configs/selected/memo_reg_fold1.json"
+    },
+    {
+      "task": "memo_reg",
+      "fold": 2,
+      "selection": "lr3e4_wd5e2",
+      "config": "configs/selected/memo_reg_fold2.json"
+    },
+    {
+      "task": "memo_reg",
+      "fold": 3,
+      "selection": "lr3e4_wd5e2",
+      "config": "configs/selected/memo_reg_fold3.json"
+    },
+    {
+      "task": "memo_reg",
+      "fold": 4,
+      "selection": "lr1e3_wd1e3",
+      "config": "configs/selected/memo_reg_fold4.json"
+    }
+  ]
+}
